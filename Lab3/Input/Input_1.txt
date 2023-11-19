@@ -1,0 +1,36 @@
+﻿using System.Reflection;
+using System.Text.RegularExpressions;
+using Lab3.Core;
+using Lab3.Model;
+#define DEBUG
+#if DEBUG
+Console.WriteLine(""Debug version"");
+#endif
+#line 200 ""customfile.txt""
+#warning This is a warning
+#error This is an error
+public static class Program
+{
+    public const string INPUTPATH = @"..\..\..\Input\Input_1.txt";
+    public static void Main()
+    {
+        var inputFile = new Lab3.Model.InputFile(INPUTPATH);
+        Tokenizer.Tokenize(inputFile);
+        Console.WriteLine("Tokens:");
+        inputFile.Tokens.ForEach(token => Console.WriteLine(token.Value));
+        // Console.WriteLine(String.Format("| {0,30} | {1,5} |", "Word", "Count"));
+        // inputFile.Tokens.ForEach(token => Console.WriteLine(String.Format("| {0,30} | {1,5} |", token.Value, token.Count)));
+        // Console.WriteLine(String.Format("| {0,30} | {1,5} |", "Total", inputFile.Tokens.Sum(token => token.Count)));
+        
+        int result = a + b * c - (d / e);
+                    bool isEqual = (x == y) || (z != w);
+                    int bitwiseAnd = m & n;
+                    bool logicalAnd = p && q;
+                    int shiftLeft = r << 2;
+                    int shiftRight = s >> 3;
+                    bool ternary = condition ? trueValue : falseValue;
+                    int modulo = t % u;
+                    int increment = v++;
+                    int decrement = w--;
+    }
+}
