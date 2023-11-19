@@ -32,5 +32,7 @@ public static class Program
                     int modulo = t % u;
                     int increment = v++;
                     int decrement = w--;
+                    
+        int pi = 3.14;
     }
 }
